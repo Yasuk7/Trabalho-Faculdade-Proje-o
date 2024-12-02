@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FromSoftware, Inc</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        
+        section {
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+       
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .game-item {
+            background-color: #2d4185;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .game-item:hover {
+            transform: translateY(-10px);
+        }
+        .game-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .game-item h3 {
+            font-size: 1.6em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        form input[type="submit"] {
+            background-color: #225aaf;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form input[type="submit"]:hover {
+            background-color: #3142a7;
+        }
+
+       
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .game-list {
+                grid-template-columns: 1fr 1fr;
+            }
+            .game-item {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .game-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body background="lys5hscwasy81.jpg">
+<header>
+    <h1>FromSoftware</h1>
+    <p>Entre no mundo dos jogos mais emocionantes!</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos famosos por jogos de ação e RPG, com uma abordagem única de design de níveis, combate e história. Com ambientes interconectados, onde os jogadores devem explorar e descobrir segredos por conta própria, sem muita orientação explícita. Nossas histórias muitas vezes são fragmentadas, permitindo que os jogadores interpretem os eventos e personagens de maneiras diferentes.</p>
+    <h3>Sobre o gênero "Soulslike"</h3>
+    <p>Jogos Soulslike são conhecidos por sua dificuldade. Os jogadores enfrentam inimigos poderosos e obstáculos que exigem precisão e estratégia. A morte faz parte da experiência e, frequentemente, os jogadores devem aprender com seus erros.</p>
+    <h4>Mecânica de combate</h4>
+    <p>O combate é frequentemente mais meticuloso e exige paciência. Os jogadores devem aprender os padrões dos inimigos e escolher o momento certo para atacar, defender ou esquivar. O uso inteligente de recursos (como saúde e stamina) também é essencial para o sucesso.</p>
+</section>
+
+<section id="jogos">
+    <h2>Nossos Jogos</h2>
+
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="dl3d5ccidn9wlkemhfjr.jpg" class="d-block w-75" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="566404.jpg" class="d-block w-75" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            
+        </button>
+    </div>
+
+    <div class="game-list">
+        <div class="game-item">
+            <img src="Dark_Souls_1_capa (1).png" alt="Jogo 1">
+            <h3>DARK SOULS</h3>
+            <p>DARK SOULS se passa primariamente no reino fictício de Lordran, onde os jogadores assumem o papel de um personagem denominado "Chosen Undead" que, segundo lendas, seria responsável pela quebra de uma maldição que torna incapazes de morrer aqueles que são afligidos por uma misteriosa marca negra.</p>
+        </div>
+        <div class="game-item">
+            <img src="Dark_Souls_2_capa.png" alt="Jogo 2">
+            <h3>DARK SOULS II</h3>
+            <p>DARK SOULS II é a tão esperada sequência do sucesso avassalador de 2011, Dark Souls™. A experiência única de RPG de ação à moda antiga cativou a imaginação de jogadores no mundo inteiro, com desafio incrível e emoções intensas.</p>
+        </div>
+        <div class="game-item">
+            <img src="Dark_Souls_3_capa.png" alt="Jogo 3">
+            <h3>DARK SOULS III</h3>
+            <p>DARK SOULS III continua a ultrapassar seus próprios limites em um ambicioso novo capítulo da série que definiu um gênero e que é aclamada pela crítica. Prepare-se para abraçar a escuridão!
+
+          
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Faça parte do universo Souls! Para mais detalhes, entre em contato.</p>
+    <form action="mailto:contato@empresa.com" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 FromSoftware. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
